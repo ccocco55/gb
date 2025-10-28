@@ -142,8 +142,8 @@
 
 #### **🛠️해결 방안**
 
-<img width="1026" height="535" alt="guestInterceptor2" src="https://github.com/user-attachments/assets/2847676f-2afb-4174-86e7-72305119a165" />
 <img width="1022" height="865" alt="guestInterceptor1" src="https://github.com/user-attachments/assets/3860fc4a-1ce4-4214-914a-fec3b13550f7" />
+<img width="1026" height="535" alt="guestInterceptor2" src="https://github.com/user-attachments/assets/2847676f-2afb-4174-86e7-72305119a165" />
 
 -   GuestInterceptor를 만들어 게스트 계정이 회원 전용 페이지에 접근하려고 하면 로그아웃 처리 후 로그인 페이지로 리다이렉트 하였습니다.
 <img width="638" height="896" alt="web1" src="https://github.com/user-attachments/assets/20b4b94c-7a9f-4d3f-b6d9-d1f3c78b6425" />
