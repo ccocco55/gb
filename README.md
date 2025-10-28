@@ -208,11 +208,11 @@
 ## 📱 앱 전환 (React Query + WebView)
 
 -   **통합 구현 능력단위**에서 배운 API 통합 및 데이터 관리 기법을 활용하여
-    React Query 기반의 WebView 환경을 구현했습니다.
+    React Native 기반의 WebView 환경을 구현했습니다.
 
 -   WebView를 통해 모바일 앱 환경 구현
 
-<img width="1170" height="2532" alt="IMG_3122" src="https://github.com/user-attachments/assets/09e5d316-3847-499b-a579-3e7d049b4a56" />
+<img width="1170" height="2532" alt="모바일화면" src="https://github.com/user-attachments/assets/ad023429-1eec-46b1-9584-b326c5ac4902" />
 
 ---
 
