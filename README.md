@@ -8,11 +8,12 @@
 
 #### 예시 이미지
 
-<img alt="ohou" src="../gb/ohou.png" />
+<img width="1920" height="1551" alt="ohou" src="https://github.com/user-attachments/assets/472875b1-f960-4e07-b64f-30a1596de4b9" />
+
 
 #### 실제 클론 코딩 이미지
 
-<img alt="localhost_10000_" src="../gb/readme.png" />
+<img width="1253" height="669" alt="readme" src="https://github.com/user-attachments/assets/e0eec238-2f65-47b7-89bc-82a14d923833" />
 
 ---
 
@@ -36,7 +37,9 @@
 
 ### [Back]
 
-<img alt="Image" src="../gb/back.png" />
+
+
+<img width="1035" height="293" alt="back" src="https://github.com/user-attachments/assets/5a32eeac-ae29-41a3-8783-760a67754378" />
 
 <br>
 
@@ -75,7 +78,8 @@
 
 ### [Front]
 
-<img alt="KakaoTalk_Photo_2025-10-22-14-54-45" src="../gb/front.png" />
+
+<img width="1198" height="469" alt="front" src="https://github.com/user-attachments/assets/79890867-abcc-4d0a-abba-6768780a88b4" />
 
 <br>
 
@@ -127,7 +131,8 @@
 
 #### **💥문제 상황**
 
-<img alt="Image" src="../gb/게스트 글 작성.png " />
+<img width="1918" height="992" alt="게스트 글 작성" src="https://github.com/user-attachments/assets/771759f1-0bae-4387-8a3b-8a37c2608435" />
+
 
 -   게스트 로그인 시에도 게시글 작성 페이지에 접근이 가능했습니다.
     (게스트 계정은 작성 기능을 사용할 수 없어야 함)
@@ -138,14 +143,13 @@
 
 #### **🛠️해결 방안**
 
-  <img alt="Image" src="../gb/guestInterceptor1.png" />
-  <img alt="Image" src="../gb/guestInterceptor2.png" />
+<img width="1026" height="535" alt="guestInterceptor2" src="https://github.com/user-attachments/assets/2847676f-2afb-4174-86e7-72305119a165" />
+<img width="1022" height="865" alt="guestInterceptor1" src="https://github.com/user-attachments/assets/3860fc4a-1ce4-4214-914a-fec3b13550f7" />
 
 -   GuestInterceptor를 만들어 게스트 계정이 회원 전용 페이지에 접근하려고 하면 로그아웃 처리 후 로그인 페이지로 리다이렉트 하였습니다.
+<img width="638" height="896" alt="web1" src="https://github.com/user-attachments/assets/20b4b94c-7a9f-4d3f-b6d9-d1f3c78b6425" />
+<img width="626" height="542" alt="web2" src="https://github.com/user-attachments/assets/52630385-4a69-42a2-adfc-ba25cdcd6d41" />
 
-  <img alt="Image" src="../gb/web1.png" />
-
-  <img alt="Image" src="../gb/web2.png" />
 
 ✅ 결과: 게스트 계정은 회원 전용 기능에 접근할 수 없도록 안전하게 제한되었습니다.
 
@@ -153,8 +157,9 @@
 
 #### **💥문제 상황**
 
-<img alt="Image" src="../gb/회원가입후로그인.png" />
-<img alt="Image" src="../gb/문제2.png" />
+
+<img width="1793" height="176" alt="회원가입후로그인" src="https://github.com/user-attachments/assets/4f1d23b6-787c-44c5-9278-da97bcb7e6ed" />
+<img width="581" height="149" alt="문제2" src="https://github.com/user-attachments/assets/abbb9219-f72b-4777-bb1f-f9340cadf599" />
 
 -   소셜 로그인(카카오, 네이버, 구글 등) 이후 로그인 페이지에서 일반 로그인 시도 시 정상적인 계정 정보 입력에도 로그인이 되지 않았습니다.
 
@@ -164,19 +169,22 @@
 
 #### **🛠️해결 방안**
 
-<img alt="Image" src="../gb/쿠키 삭제 메소드.png" />
+<img width="850" height="705" alt="쿠키 삭제 메소드" src="https://github.com/user-attachments/assets/aa705c33-6741-4e50-851f-205fa0adff27" />
 
 1. resetCookies 메서드 추가
 
 -   모든 쿠키 및 Redis에 저장된 refreshToken을 삭제하는 메서드 생성.
 
-<img alt="Image" src="../gb/쿠키_서비스.png" />
+
+<img width="723" height="237" alt="쿠키_서비스" src="https://github.com/user-attachments/assets/d5cca0a8-fe19-4be2-b356-60a6806f79e4" />
+
 
 2. service.js 수정
 
 -   로그인 요청 전 resetCookies를 비동기(async)로 실행하도록 수정.
 
-<img alt="Image" src="../gb/쿠키 삭제 사용.png" />
+<img width="277" height="54" alt="쿠키 삭제 사용" src="https://github.com/user-attachments/assets/1a1142c0-3544-4a5c-813c-dfe1559a77b7" />
+
 
 3. event.js 수정
 
@@ -192,7 +200,8 @@
 -   **JUnit5를 활용한 단위 테스트 및 통합 테스트**를 통해
     애플리케이션의 안정성과 기능 완성도를 검증했습니다.
 
-<img src="../gb/qa.png" />
+
+<img width="944" height="436" alt="qa" src="https://github.com/user-attachments/assets/abb036b6-7f7a-427d-bdcb-1e9e1080b00e" />
 
 ---
 
