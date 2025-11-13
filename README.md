@@ -273,8 +273,8 @@ PostgreSQL에서는 `ENUM`이 사용자 정의 타입(`TYPE`)으로 처리되는
 -    통합 구현 능력단위에서 배운 react-native 기술로 모바일 화면을 구축하였습니다.  
 -    웹 화면을 앱에 통합하여 모바일 환경에서도 동일한 사용자 경험을 제공하도록 설계하였습니다.  
 
-<img width="500" height="2556" alt="KakaoTalk_20251113_113604780" src="https://github.com/user-attachments/assets/d8601d5e-f2c3-423d-8bc7-c6288cb3777d" />
-<img width="500" height="2556" alt="KakaoTalk_20251113_113604780_01" src="https://github.com/user-attachments/assets/41ae4fb6-9fbc-4969-a99e-cab94d502149" />
+<img width="300" height="2556" alt="KakaoTalk_20251113_113604780" src="https://github.com/user-attachments/assets/d8601d5e-f2c3-423d-8bc7-c6288cb3777d" />
+<img width="300" height="2556" alt="KakaoTalk_20251113_113604780_01" src="https://github.com/user-attachments/assets/41ae4fb6-9fbc-4969-a99e-cab94d502149" />
 
 ---
 
