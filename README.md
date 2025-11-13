@@ -211,7 +211,7 @@
 
 1. MemberMapper.xml 수정
 
-<img width="1696" height="493" alt="mapper-xml" src="https://github.com/user-attachments/assets/c509882e-d2f5-4829-838b-b38d6262ab58" />
+<img width="1435" height="648" alt="제목 없음" src="https://github.com/user-attachments/assets/b77d92f1-a8b1-4bfe-8f29-3d3f72547e1b" />
 
 
 -   provider 조건을 추가하여 이메일과 소셜 제공자를 함께 조회하도록 수정했습니다.
