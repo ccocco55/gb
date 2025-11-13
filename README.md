@@ -279,7 +279,7 @@ PostgreSQL에서는 `ENUM`이 사용자 정의 타입(`TYPE`)으로 처리되는
 ---
 
 
-## 인프라 구축구분
+## AWS Cloud 배포
 
 ![슬라이드3](https://github.com/user-attachments/assets/21373e41-a50a-4b46-9481-c2eef6b7c810)
 
