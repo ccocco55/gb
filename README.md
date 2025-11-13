@@ -129,7 +129,7 @@
 #### **( 1 )** 회원과 같은 서비스가 되어버리는 게스트
 
 🌩문제 상황🌩  
-<img width="1918" height="992" alt="게스트 글 작성" src="https://github.com/user-attachments/assets/45f6511b-439d-42e7-ad21-7cf00acc9d26" />
+<img width="1918" height="992" alt="게스트 글 작성" src="https://github.com/user-attachments/assets/91abdbe0-90cd-4004-92ee-4f68d21a7f2f" />
 
 게스트 로그인 시에도 게시글 작성 페이지에 접근이 가능했습니다.
 (게스트 계정은 작성 기능을 사용할 수 없어야 함)
@@ -142,17 +142,16 @@
 
 1. GuestInterceptor 생성
 
-<img width="1022" height="865" alt="guestInterceptor1" src="https://github.com/user-attachments/assets/aa6bab11-8c07-4ab2-94ea-27d937810092" />
-<img width="1026" height="535" alt="guestInterceptor2" src="https://github.com/user-attachments/assets/f5aef701-6f8a-4cd8-9186-497a8f2a7d77" />
-
+<img width="1022" height="865" alt="guestInterceptor1" src="https://github.com/user-attachments/assets/5e4d56bd-4a12-42cb-8ed3-9f3a1dd893a1" />   
+<img width="1026" height="535" alt="guestInterceptor2" src="https://github.com/user-attachments/assets/73a67c7c-2aeb-4bcf-80b5-b168766ad8bc" />
 
 -   로그인한 사용자의 username이 이메일 형식인지 확인 후
 -   이메일 형식이 아니면 게스트 계정으로 분류 했습니다.
 
 2. 게스트 계정이 회원 전용 페이지에 접근하려고 하면
+<img width="638" height="896" alt="web1" src="https://github.com/user-attachments/assets/a5899062-7507-42ae-8e74-7d9e140854d6" />     
+<img width="626" height="542" alt="web2" src="https://github.com/user-attachments/assets/6d8669ba-a15e-495d-b5cc-64cc9710c000" />
 
-<img width="638" height="896" alt="web1" src="https://github.com/user-attachments/assets/cb20ce3f-8222-416e-9c69-21d8fb482b86" />
-<img width="626" height="542" alt="web2" src="https://github.com/user-attachments/assets/fcd0ffba-df3e-4069-863e-2a5babbcbc56" />
 
 
 -   로그아웃 처리 후
@@ -165,7 +164,8 @@
 #### **( 2 )** 소셜 로그인 후 일반 회원 로그인 불가
 
 🌩문제 상황🌩  
-<img width="581" height="149" alt="문제2" src="https://github.com/user-attachments/assets/55459844-2da2-4b4a-9cfe-180772925fe5" /><img width="1793" height="176" alt="회원가입후로그인" src="https://github.com/user-attachments/assets/2591f71b-2c10-4482-89f5-1b7c77cfae52" />
+<img width="581" height="149" alt="문제2" src="https://github.com/user-attachments/assets/c2798326-76a4-4b53-b2cd-75d44793780e" /><img width="1793" height="176" alt="회원가입후로그인" src="https://github.com/user-attachments/assets/7edd24df-2ccd-4b8f-a6ca-3ae64fc355d0" />
+
 
 
 소셜 로그인(카카오, 네이버, 구글 등) 이후 로그인 페이지에서 일반 로그인 시도 시 정상적인 계정 정보 입력에도 로그인이 되지 않았습니다.
@@ -177,20 +177,20 @@
 
 1. resetCookies 메서드 추가
 
-<img width="850" height="705" alt="쿠키 삭제 메소드" src="https://github.com/user-attachments/assets/7e677caa-b0f2-46c2-9abe-80652c58ca16" />
+<img width="850" height="705" alt="쿠키 삭제 메소드" src="https://github.com/user-attachments/assets/14c5650b-8adb-4b8f-a0bb-46f7f339a890" />
 
 
 -   모든 쿠키 및 Redis에 저장된 refreshToken을 삭제하는 메서드 생성했습니다.
 
 2. service.js 수정
 
-<img width="723" height="237" alt="쿠키_서비스" src="https://github.com/user-attachments/assets/724721c9-06f6-4f07-b8fd-9ca8315fe579" />
+<img width="723" height="237" alt="쿠키_서비스" src="https://github.com/user-attachments/assets/cb55ff79-74f7-43b5-8d86-f4a8475db27a" />
 
 -   로그인 요청 전 resetCookies를 비동기(async)로 실행하도록 수정했습니다.
 
 3. event.js 수정
 
-<img width="277" height="54" alt="쿠키 삭제 사용" src="https://github.com/user-attachments/assets/7da2ce58-b232-428a-aaad-502dca2bb474" />
+<img width="277" height="54" alt="쿠키 삭제 사용" src="https://github.com/user-attachments/assets/7434780c-b4a7-4335-aa6d-d0450fcd3920" />
 
 -   로그인 페이지 로드 시점에 `memberService.resetCookies();` 호출하여 기존 쿠키 및 세션 데이터 초기화했습니다.
 
@@ -199,7 +199,7 @@
 #### **( 3 )** 소셜 로그인 같은 이메일 사용시 같은 회원으로 인식
 
 🌩문제 상황🌩  
-<img width="1231" height="682" alt="기존코드" src="https://github.com/user-attachments/assets/7af9eca3-758e-41da-ad1b-41a8a5c41bae" />
+<img width="1231" height="682" alt="기존코드" src="https://github.com/user-attachments/assets/cf16c7bf-970a-435a-838a-ce7f21dbee20" />
 
 서로 다른 소셜 로그인이 하나의 이메일을 사용하는 경우, 신규 회원 가입 창이 아닌 기존 회원으로 인식되어 바로 로그인이 되는 문제가 발생했습니다.
 
@@ -210,26 +210,26 @@
 
 1. MemberMapper.xml 수정
 
-<img width="1696" height="493" alt="mapper-xml" src="https://github.com/user-attachments/assets/2d7316e7-c83a-444d-84b2-d90937e6577a" />
+<img width="1696" height="493" alt="mapper-xml" src="https://github.com/user-attachments/assets/c509882e-d2f5-4829-838b-b38d6262ab58" />
 
 
 -   provider 조건을 추가하여 이메일과 소셜 제공자를 함께 조회하도록 수정했습니다.
 
 2. MemberMapper.java 수정
 
-<img width="1449" height="748" alt="mapper-java" src="https://github.com/user-attachments/assets/33c2b508-b4ca-4cf0-82ea-11e450e07f49" />
+<img width="1449" height="748" alt="mapper-java" src="https://github.com/user-attachments/assets/a1dbcc8e-3db8-402d-bb26-cb4bdabab366" />
 
 -   provider를 매개변수로 추가하여 DAO 계층에서 전달 가능하도록 변경했습니다.
 
 3. MemberDAO.java 수정
 
-<img width="1175" height="682" alt="dao" src="https://github.com/user-attachments/assets/5e7a46b9-9857-4249-a365-81ef745b0f59" />
+<img width="1175" height="682" alt="dao" src="https://github.com/user-attachments/assets/d346d907-fe48-4da9-b650-01e9a4b2eb8a" />
 
 -   이메일과 provider를 함께 조건으로 사용하여 정확한 회원 조회가 가능하도록 수정했습니다.
 
 4. CustomOAuth2UserService 수정
 
-<img width="1128" height="921" alt="스크린샷 2025-10-30 170219" src="https://github.com/user-attachments/assets/cc72d0e7-24ff-48d7-be6f-daac9fe8d434" />
+<img width="1128" height="921" alt="스크린샷 2025-10-30 170219" src="https://github.com/user-attachments/assets/f9f95cad-8827-4dd5-8adf-dedce8597473" />
 
 -   OAuth2 인증 과정에서 registrationId를 통해 소셜 제공자(Google, Naver, Kakao 등)를 식별하고, 사용자 정보에서 provider 값을 추출하여 회원 조회 시 이메일과 함께 비교하도록 개선했습니다.
 
@@ -237,7 +237,7 @@
 
 🌩문제 상황🌩
 
-<img width="1171" height="180" alt="6-2_오류" src="https://github.com/user-attachments/assets/cfdd626a-b919-48bb-b019-dfd31aaba855" />
+<img width="1171" height="180" alt="6-2_오류" src="https://github.com/user-attachments/assets/f12c290d-960c-465a-b8f6-8fe987d84126" />
 
 
 
@@ -245,15 +245,16 @@
 
 🚨문제 원인🚨
 
-<img width="1276" height="72" alt="6-2_기존코드" src="https://github.com/user-attachments/assets/b1e8100c-e253-42ad-a615-fc2763208514" />
-<img width="657" height="97" alt="6-2_기존코드2" src="https://github.com/user-attachments/assets/767f0f80-0778-4618-a313-442908240a63" />
+<img width="1276" height="72" alt="6-2_기존코드" src="https://github.com/user-attachments/assets/18c476ec-15a4-43aa-9218-ffd12c5bf475" />
+<img width="657" height="97" alt="6-2_기존코드2" src="https://github.com/user-attachments/assets/689a78f1-9846-445e-85d1-16e92b481129" />
+
 
 PostgreSQL에서는 `ENUM`이 사용자 정의 타입(`TYPE`)으로 처리되는데, Java 코드에서 `provider` 값을 단순 `String`으로 전달하면서 타입 불일치가 발생했습니다. 이로 인해 SQL 문법 오류가 발생한 것입니다.
 
 🚀해결 방법🚀
 
-<img width="1154" height="922" alt="스크린샷 2025-10-30 170549" src="https://github.com/user-attachments/assets/ff425aff-5b25-458d-88e8-a16d33305b54" />
-<img width="1025" height="71" alt="변경코드2" src="https://github.com/user-attachments/assets/37c13585-3b2f-4829-bf14-d7618d733792" />
+<img width="1154" height="922" alt="스크린샷 2025-10-30 170549" src="https://github.com/user-attachments/assets/164e016c-4539-4a1a-866b-340ceb18d4a8" />
+<img width="1025" height="71" alt="변경코드2" src="https://github.com/user-attachments/assets/9bb4aca3-f5c8-4bdf-8355-c03e410ab3ee" />
 
 
 `MemberProvider` Enum 클래스에서 `provider` 값을 매핑하여, 문자열이 아닌 Enum 객체로 변환한 후 DAO에 전달하도록 수정했습니다.  
@@ -264,15 +265,15 @@ PostgreSQL에서는 `ENUM`이 사용자 정의 타입(`TYPE`)으로 처리되는
 -   테스트 케이스 설계 및 실행 절차를 기반으로 QA 테스트 문서를 작성하고 기능별 검증을 수행했습니다.  
 -   **JUnit5를 활용한 단위 테스트 및 통합 테스트**를 통해 애플리케이션의 안정성과 기능 완성도를 검증했습니다.
 
-<img width="944" height="436" alt="qa" src="https://github.com/user-attachments/assets/f417c1dd-9c04-4a74-b88b-002fb1378aef" />
+<img width="944" height="436" alt="qa" src="https://github.com/user-attachments/assets/e50349b6-da19-42e3-9a99-f74f5fda2f46" />
 
 ## 8. 📱앱 전환 - (React Native + WebView)
 
 -    통합 구현 능력단위에서 배운 react-native 기술로 모바일 화면을 구축하였습니다.  
 -    웹 화면을 앱에 통합하여 모바일 환경에서도 동일한 사용자 경험을 제공하도록 설계하였습니다.  
 
-<img width="500" alt="모바일화면" src="https://github.com/user-attachments/assets/e8c3c6da-d98c-492c-8eae-1c719f45fdb0" />
-
+<img width="500" height="2556" alt="KakaoTalk_20251113_113604780" src="https://github.com/user-attachments/assets/d8601d5e-f2c3-423d-8bc7-c6288cb3777d" />
+<img width="500" height="2556" alt="KakaoTalk_20251113_113604780_01" src="https://github.com/user-attachments/assets/41ae4fb6-9fbc-4969-a99e-cab94d502149" />
 
 ---
 
